@@ -1,0 +1,395 @@
+/*=============header BEGIN==========*/
+#header{
+    width:100%;
+    height:96px;
+    background-color:rgba(0,0,0,0);
+    border-bottom: 1px solid rgb(171,175,183);
+    /*position: fixed;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#header.fixed{
+    position:fixed;
+    top:0;
+    /*width:100%;*/
+    background:#fff;
+    /*color:#000;*/
+    /*z-index:100;*/
+    /*transition: all 0.5s linear ;*/
+}
+div.content{
+    display: flex;
+    justify-content: space-between;
+}
+div.content span{
+    font:36px/96px "Microsoft Yahei";
+    font-weight: 600;
+    color: #fff;
+    margin-left: 30px;
+}
+.h-right ul{
+    width: 600px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.h-right>ul>li>a{
+    font:18px/96px "Microsoft Sans Serif";
+    color: #fff;
+}
+
+/*==============第一部分PersonalResume================*/
+.per_window{
+    /*background-color: #83a4ff;*/
+    background: url("../images/01.jpg") no-repeat;
+    background-size: 100%;
+    padding: 220px 0 130px;
+}
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+.personal{
+    width: 50%;
+    padding-left: 15px;
+}
+.perDetail{
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(201,201,201);
+}
+.resume{
+    font-size: 70px;
+    /*color: #58ff65;*/
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.perDetail p{
+    /*color: #ffa3cf;*/
+    color:#fff;
+    font:30px "Microsoft Yahei";
+
+}
+#contact ul{
+    margin-bottom: 10px;
+}
+#contact>ul>li{
+    display: inline-block;
+    padding: 0 7px;
+}
+#contact>ul>li>a{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 11px;
+
+}
+#contact>ul>li:hover{
+    background: #fff;
+    border-radius:50% ;
+}
+
+/*=================第二部分：关于自己=================*/
+.a_container{
+    /*background-color: #d1fff8;*/
+    padding:100px 5px;
+    display: flex;
+
+}
+.intro{
+    width: 25%;
+    margin-top: 20px;
+    text-align: right;
+}
+.intro h2{
+    font-size: 30px;
+}
+.intro p{
+    font-size: 15px;
+    color:#a6a7aa;
+    margin-top: 8px;
+}
+.individual{
+    width: 63%;
+    padding-left:13%;
+}
+.individual p{
+    font-size: 15px;
+    color: #a6a7aa;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+.individual p+p{
+    margin-bottom: 70px;
+}
+/*.progress{*/
+    /*box-sizing: border-box;*/
+/*}*/
+.progress h5{
+    margin-bottom: 15px;
+}
+.progress h5 span{
+    color:#515769;
+    font-size:14px;
+    font-weight:400;
+    float: right !important;
+    clear: both;
+}
+/*未实现 */
+.progress_line{
+    height: 3px;
+    /*box-shadow: none;*/
+    margin-bottom: 20px;
+    /*opacity: 1;*/
+}
+.progress_line .bg_line{
+    background-color: #17bed2;
+}
+
+/*=======================第三部分：作品库====================*/
+.projects{
+    background-color: rgb(249,249,249);
+}
+.projects .container{
+    /*background-color: #d1c5dd;*/
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.con_left{
+    /*background-color: #fff;*/
+    width: 36%;
+}
+#intro{
+    border-bottom: 1px solid #a6a7aa;
+}
+#intro .logo{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#intro h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+#intro p{
+    font-size:25px;
+    padding:20px 0;
+}
+.project{
+    background-color: #fff;
+    margin-top:50px;
+    width: 100%;
+    /*height: 100px;*/
+    border: 1px solid rgb(217,217,217) ;
+}
+.project a{
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+.project a img{
+    width: 100%;
+}
+.project a img:hover{
+    width: 120%;
+}
+.project .title{
+    /*border: 1px solid #a6a7aa;*/
+    /*border-top: none;*/
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.title .title_con{
+    /*background-color: #fff;*/
+    width:60%;
+    padding: 20px;
+}
+.title h3{
+    margin-bottom: 10px;
+}
+.project .title a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    right: -40px;
+    bottom: -21px;
+}
+
+.con_right{
+    /*background-color: #58ff65;*/
+    width: 62%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.primary{
+    background-color: #fff;
+    border: 1px solid rgb(217,217,217);
+    margin-bottom: 30px;
+    /*display: flex;*/
+}
+.pri_header{
+    /*background-color: #d1fff8;*/
+    border-bottom: 1px solid rgb(217,217,217);
+    display: flex;
+}
+.pri_box{
+    /*background-color: #ffa3cf;*/
+    width: 50%;
+    padding: 50px;
+    border-right: 1px solid rgb(217,217,217);
+}
+.pri_box h3{
+    font-size: 28px;
+    padding-bottom: 13px;
+}
+.pri_atr{
+    /*background-color: #83a4ff;*/
+    width: 28%;
+    padding: 30px;
+}
+.pri_atr span{
+    display: inline-block;
+    margin-bottom:11px;
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.pri_atr>a{
+    /*background-color: #fff;*/
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pri_atr>a>p{
+    margin-top: 15px;
+}
+.pri_atr>a>img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.primary>.pri_pic{
+    width: 90%;
+    height: 310px;
+    margin: 35px;
+    overflow: hidden;
+}
+.primary>.pri_pic img{
+    width: 100%;
+}
+.primary>.pri_pic img:hover{
+    width: 120%;
+}
+.primary>p{
+    padding: 35px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.m_project{
+    background-color: #fff;
+    width: 48%;
+    border:1px solid rgb(217,217,217);
+}
+.m_blank{
+    margin-right: 25px;
+}
+.m_project>a{
+    display: inline-block;
+    width: 100%;
+    height: 196px;
+    overflow: hidden;
+}
+.m_project>a>img{
+    width: 100%;
+}
+.m_project>a>img:hover{
+    width: 120%;
+}
+.m_project .title{
+    display: flex;
+}
+.title .title_con{
+    background-color: #fff;
+}
+.title>a{
+    display: inline-block;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: relative;
+    right: -16px;
+    bottom: -17px;
+}
+.title>a>img{
+    width: 100%;
+}
+
+/*=================第四部分：特效专栏=================*/
+.efficiency div, figure ,figcaption,.efficiency div:after,.efficiency div:before,figure:after,figure:before,figcaption:after,figcaption:before{
+    box-sizing: border-box;
+}
+.efficiency .eff_top h2{
+    font-size: 49px;
+    border-bottom: 1px solid #a6a7aa;
+    padding: 20px 0;
+}
+.efficiency .eff_bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+.efficiency .eff_bottom .eff_project{
+    width: 382px;
+    background-color: beige;
+    margin: 4px;
+}
+.eff_bottom .eff_project img{
+    width: 100%;
+}
+
+/*==========================footer========================*/
+.fc{
+    width: 100%;
+    background: #f5f5f5;
+}
+#footer{
+    /*background: #f2ebff;*/
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    padding: 40px 0 70px;
+}
+#footer p{
+    padding:16px 0;
+    color:#81848f;
+}
+#footer span{
+    color:#515769;
+}
+#footer>div.special{
+    margin: auto 60px;
+}
+#footer>div.special h2{
+     font-size:34px;
+ }
+#footer>div.title{
+    margin: auto 40px;
+}
+#footer>div.title span{
+    font-size: 22px;
+    font-weight: 500;
+}
