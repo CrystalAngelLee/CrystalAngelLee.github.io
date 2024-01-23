@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrystal_docs=self.webpackChunkcrystal_docs||[]).push([[5],{6010:a=>{a.exports=JSON.parse('{"title":"JavaScript","slug":"/category/javascript-1","permalink":"/docs/category/javascript-1","navigation":{"next":{"title":"\u6570\u636e\u7c7b\u578b","permalink":"/docs/interview/js/data_types"}}}')}}]);
