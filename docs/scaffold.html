@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-scaffold/scaffold" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">原生脚手架概述 | Frontend Mind</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://crystalangellee.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://crystalangellee.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://crystalangellee.github.io/docs/scaffold"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="原生脚手架概述 | Frontend Mind"><meta data-rh="true" name="description" content="研发的视角：开发脚手架的必要性"><meta data-rh="true" property="og:description" content="研发的视角：开发脚手架的必要性"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://crystalangellee.github.io/docs/scaffold"><link data-rh="true" rel="alternate" href="https://crystalangellee.github.io/docs/scaffold" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://crystalangellee.github.io/docs/scaffold" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Frontend Mind RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Frontend Mind Atom Feed"><link rel="stylesheet" href="/assets/css/styles.567930ad.css">
+<script src="/assets/js/runtime~main.e094f564.js" defer="defer"></script>
+<script src="/assets/js/main.b32df304.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/favicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/favicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Frontend Mind</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/category/javascript">前端笔记</a><a class="navbar__item navbar__link" href="/docs/category/javascript-1">面试题</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/blog">文章</a><a href="https://github.com/CrystalAngelLee/CrystalAngelLee.github.io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="true" href="/docs/category/javascript">JavaScript</a><button aria-label="折叠侧边栏分类 &#x27;JavaScript&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/javascript/data_types">数据类型</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/flow">Flow</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/typescript/overview">TypeScript</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/nodejs/basic">NodeJS</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/module">前端模块化概述</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/docs/scaffold">前端工程化</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/scaffold">脚手架</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/scaffold">原生脚手架概述</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" tabindex="0" href="/docs/scaffold/import_local">深入源码</a></div></li></ul></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/systemjs">Systemjs</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/web_components">Web Components</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/micro_frontends/overview">微前端</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/git">Git 常用操作</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/communication/telecommunication">网络通信</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/problems/node_support_esm">实际问题</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/opts/wechat">实用操作</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">前端工程化</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">脚手架</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">原生脚手架概述</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><h1>原生脚手架概述</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="研发的视角开发脚手架的必要性">研发的视角：开发脚手架的必要性<a href="#研发的视角开发脚手架的必要性" class="hash-link" aria-label="研发的视角：开发脚手架的必要性的直接链接" title="研发的视角：开发脚手架的必要性的直接链接">​</a></h2>
+<blockquote>
+<p>核心目标是：提升前端研发效能</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架核心价值">脚手架核心价值<a href="#脚手架核心价值" class="hash-link" aria-label="脚手架核心价值的直接链接" title="脚手架核心价值的直接链接">​</a></h3>
+<p>将研发过程：</p>
+<ul>
+<li>自动化：项目重复代码拷贝/git 操作/发布上线操作</li>
+<li>标准化：项目创建/git flow/发布流程/回滚流程</li>
+<li>数据化：研发过程系统化、数据化，是的研发过程可量化</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="和自动化构建工具区别">和自动化构建工具区别<a href="#和自动化构建工具区别" class="hash-link" aria-label="和自动化构建工具区别的直接链接" title="和自动化构建工具区别的直接链接">​</a></h3>
+<p>问题：jenkins、travis 等自动化构建工具已经比较成熟了，为什么还需要自研脚手架？</p>
+<ul>
+<li>不满足需求：jenkins、travis 通常在 git hooks 中触发，需要在服务端执行，无法覆盖研发人员本地的功能，如：创建项目自动化、本地 git 操作自动化等</li>
+<li>定制复杂：jenkins、travis 定制过程需要开发插件，其过程较为复杂，需要使用 java 语言，对前端同学开发不友好</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="从使用角度理解什么是脚手架">从使用角度理解什么是脚手架<a href="#从使用角度理解什么是脚手架" class="hash-link" aria-label="从使用角度理解什么是脚手架的直接链接" title="从使用角度理解什么是脚手架的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架简介">脚手架简介<a href="#脚手架简介" class="hash-link" aria-label="脚手架简介的直接链接" title="脚手架简介的直接链接">​</a></h3>
+<p>脚手架本质是一个操作系统的客户端，它通过命令执行，比如</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">vue create vue-test-app</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代 码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>上面这条命令由 3 个部分组成：</p>
+<ul>
+<li>主命令：vue</li>
+<li>command: create</li>
+<li>command 的 param: vue-test-app</li>
+</ul>
+<p>他表示创建一个 vue 项目，项目的名称为 vue-test-app，以上是一个较为简单的脚手架命令，但实际场景往往更加复杂，比如：</p>
+<p>当前目录已经有文件了，我们需要覆盖当前目录下的文件，强制进行安装 vue 项目，此时我们就可以输入：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">vue create vue-test-app --force</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>这 里的 <code>--force</code> 叫做 option，用来辅助脚手架确认在特定场景下用户的选择（可以理解为配置）。还有一种场景：</p>
+<p>通过 <code>vue create</code>创建项目时，会自动执行<code>npm install</code>帮用户安装依赖，如果我们希望使用淘宝源来安装，可以输入命令：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">vue create vue-test-app --force -r https://registry.npm.taobao.org</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>这里的<code>-r</code>也叫做 option,它与<code>--force</code>不同的是它使用<code>-</code>，并且使用简写，这里的 <code>-r</code> 也可以替换成 <code>--registry</code></p>
+<p><code>-r https://registry.npm.taobao.org</code> 后面的 <code>https://registry.npm.taobao.org</code> 成为 option 的 param，其实 <code>--force</code> 可以理解为<code>--force true</code>，简写为 <code>--force</code> 或 <code>-f</code></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架执行原理">脚手架执行原理<a href="#脚手架执行原理" class="hash-link" aria-label="脚手架执行原理的直接链接" title="脚手架执行原理的直接链接">​</a></h2>
+<div class="language-tex codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-tex codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">1. which vue</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. ll</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. cd bin/ (bin 下面有一个vue超|软链接)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>在终端输入 <code>vue create vue-test-app</code></li>
+<li>终端解析出 vue 命令</li>
+<li>终端在环境变量中找到 vue 命令</li>
+<li>终端根据 vue 命令链接到实际文件 vue.js</li>
+<li>终端利用 node 执行 vue.js</li>
+<li>vue.js 解析 command/options</li>
+<li>vue.js 执行 command</li>
+<li>执行完毕，退出执行</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="从应用的角度看如何开发一个脚手架">从应用的角度看如何开发一个脚手架<a href="#从应用的角度看如何开发一个脚手架" class="hash-link" aria-label="从应用的角度看如何开发一个脚手架的直接链接" title="从应用的角度看如何开发一个脚手架的直接链接">​</a></h2>
+<blockquote>
+<p>这里以 vue-cli 为例</p>
+</blockquote>
+<ul>
+<li>开发 npm 项目，该项目中应包含一个 <code>bin/vue.js</code> 文件，并将这个项目发布到 <code>npm</code></li>
+<li>将 npm 项目安装到 node 的 lib/node_modules</li>
+<li>在 node 的 bin 目录下配置 vue 软链接指向 lib/node_modules/@vue/cli/bin/vue.js</li>
+</ul>
+<p>这样我们在执行 vue 的命令的时候就可以找到 vue.js 进行执行</p>
+<h1>脚手架的实现原理</h1>
+<p><strong>QUESTION</strong></p>
+<ul>
+<li>
+<p>为什么全局安装 @vue/cli 后会添加的命令为 vue?</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install -g @vue/cli</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>通过 which vue 等命令找到 vue 的最终执行文件名称为 vue.js 我们可以在 vue 的文件夹中找到 package.json ，会发现有一个指令为 <code>bin</code> 中配置了相关的安装完包之后 软连接对应的名称 <code>vue</code> 以及对应的执行文件 <code>bin\vue.js</code></p>
+</li>
+<li>
+<p>全局安装 @vue/cli 时发生了什么</p>
+<ol>
+<li>npm 将包安装到 node 下面的 node_modules 中</li>
+<li>当包完全下载完成之后会解析包下面的 package.json 中的 bin，如果发现有这个配置，就会在 node 的 bin 目录下安装一个软链接，指向包的 package.json 中 bin 后面配置的文件</li>
+</ol>
+</li>
+<li>
+<p>为什么 vue 指向一个 js 文件，我们却可以直接通过 vue 命令直接去执行它</p>
+<ul>
+<li>
+<p>在执行 vue 命令的时候，操作系统会根据 which vue 命令找到并执行相关文件（执行 vue 和直接执行 which vue 找到的文件地址是一样的）【在环境变量中查找 vue 命令是否被注册，如果没有注册则给出提示，如果注册了则执行相关的文件】</p>
+</li>
+<li>
+<p>自己写的文件直接执行是执行不起来的</p>
+<ul>
+<li>
+<p>添加可执行权限</p>
+<ul>
+<li>chmod 777 自己的文件.js</li>
+</ul>
+</li>
+<li>
+<p>添加完之后直接执行 自己的文件.js 还是执行不起来，为什么呢？JS 文件必须通过一个解释器 node 来进行执行</p>
+</li>
+<li>
+<p>运行 node 自己的文件.js 这时候就能执行起来了</p>
+</li>
+</ul>
+</li>
+<li>
+<p>可以直接执行 vue 是因为在 vue.js 的上方添加了一个环境变量 <code>#!/usr/bin/env node</code>(为什么可以直接通过命令执行的原因)</p>
+</li>
+<li>
+<p>#!/usr/bin/env node 说明</p>
+<ul>
+<li>这句话告诉我们 到环境变量中查找 node 命令，找到 node 命令后去使用 node 命令来执行</li>
+<li><code>/usr/bin/env node test.js</code> === <code>./test.js</code> === <code>node test.js</code></li>
+</ul>
+</li>
+<li>
+<p>觉得通过./的方式执行不太优雅，想直接通过命令来执行怎么做呢？</p>
+<ol>
+<li>找到环境变量 <code>echo $PATH</code></li>
+<li>在环境变量中创建一个软连接<!-- -->
+<ol>
+<li>pwd 查找当前文件目录地址并拷贝</li>
+<li>找到本机 node 下的 bin 目录</li>
+<li>创建软连接 <code>ln -s 命令名称 刚才拷贝的 文件目录地址/文件名称 </code></li>
+</ol>
+</li>
+<li>这个时候就可以使用命令来进行执行了</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>以下两种写法有啥区别？</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">#!/usr/bin/env node</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">#!/usr/bin/node</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>第一种是在环境变量中查找 Node</li>
+<li>第二种是直接执行 <code>/usr/bin/</code> 目录下的 <code>node</code></li>
+</ul>
+</li>
+<li>
+<p>为什么说脚手架本质是操作系统的客户端？它和我们在 PC 上安装的应用/软件有什么区别？</p>
+<ul>
+<li>执行脚手架的时候会发现它其实是作为一个操作系统的可执行文件来进行执行的，所以我们说开发的脚手架就是操作系统上的一个客户端（客户端不是我们编写的脚手架文件）。为什么说它是客户端？因为脚手架执行是依靠 node 命令的，node 是一个操作系统的客户端，而我们的执行文件仅是 node 的一个参数。（Node 本身是一个可执行文件）</li>
+<li>本质来说没有区别</li>
+</ul>
+</li>
+<li>
+<p>如何为 node 脚手架命令创建别名？</p>
+<ul>
+<li>通过软链接（可以做嵌套使用）<!-- -->
+<ul>
+<li>ln -s 命令名称 已有的名称</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>描述脚手架命令执行的全过程-流程图</p>
+</li>
+</ul>
+<h1>脚手架的开发流程</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架开发流程详解">脚手架开发流程详解<a href="#脚手架开发流程详解" class="hash-link" aria-label="脚手架开发流程详解的直接链接" title="脚手架开发流程详解的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="开发流程">开发流程<a href="#开发流程" class="hash-link" aria-label="开发流程的直接链接" title="开发流程的直接链接">​</a></h3>
+<ul>
+<li>
+<p>创建 npm 项目</p>
+</li>
+<li>
+<p>创建脚手架入口文件，最上方添加：</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token hashbang comment" style="color:#999988;font-style:italic">#!/usr/bin/env node</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>配置 package.json 添加 bin 属性</p>
+</li>
+<li>
+<p>编写脚手架代码</p>
+</li>
+<li>
+<p>将脚手架发布到 npm</p>
+</li>
+<li>
+<p>📢 注意点：</p>
+<ol>
+<li>
+<p>脚手架在全局安装后如果指向了本地的代码仓库（指向原因：在当前目录下存在相关代码仓库，npm 就会将本地文件作为软链接直接链接过去-npm 方便开发者进行本地的开发和调试），如果本地仓库进行改变了，那么直接使用脚手架命令也会得到相应的更新</p>
+</li>
+<li>
+<p>如果不希望出现 1 的情况，只需要离开相关目录进行 npm 安装脚手架即可</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用流程">使用流程<a href="#使用流程" class="hash-link" aria-label="使用流程的直接链接" title="使用流程的直接链接">​</a></h3>
+<ul>
+<li>
+<p>安装脚手架</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install -g your-own-cli</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>使用脚手架</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">your-own-cli</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架开发难点">脚手架开发难点<a href="#脚手架开发难点" class="hash-link" aria-label="脚手架开发难点的直接链接" title="脚手架开发难点的直接链接">​</a></h3>
+<ul>
+<li>
+<p>分包： 将复杂的系统拆分成若干个模块</p>
+</li>
+<li>
+<p>命令注册：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">vue create</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">vue add</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">vue invoke</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>参数解析</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">vue command [options] &lt;params&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>options 全称： --version、--help</li>
+<li>Options 简写： -v、-h</li>
+<li>带 params 的 options: --path /users/...</li>
+<li>帮助文档：<!-- -->
+<ul>
+<li>Global help<!-- -->
+<ul>
+<li>usage</li>
+<li>options</li>
+<li>Commands</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>命令行交互</p>
+</li>
+<li>
+<p>日志打印</p>
+</li>
+<li>
+<p>命令行文字变色</p>
+</li>
+<li>
+<p>  网络通信：http/websocket</p>
+</li>
+<li>
+<p>文件处理</p>
+</li>
+<li>
+<p>...</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="开发调试">开发调试<a href="#开发调试" class="hash-link" aria-label="开发调试的直接链接" title="开发调试的直接链接">​</a></h2>
+<ol>
+<li>
+<p>在有脚手架仓库的文件夹下执行<code>npm i -g 脚手架名称</code> 进行安装调试</p>
+</li>
+<li>
+<p>在脚手架目录下执行 <code>npm link</code> （<strong>npm link 会在全局 node_modules 下安装相关库文件</strong>）</p>
+<p>说明：执行完 <code>npm link</code> 之后，会在 Node 里安装一个相关的命令链向 node_modules 下的文件，node_modules 下的文件链向本地仓库，实现软链</p>
+</li>
+<li>
+<p>复杂脚手架调试方法</p>
+<ol>
+<li>
+<p>创建子库文件夹：注意修改 package.json 中的 main 指向入口文件</p>
+</li>
+<li>
+<p>在子库文件夹下执行 <code>npm link</code></p>
+</li>
+<li>
+<p>到主库里执行<code>npm link 库文件夹名称</code></p>
+</li>
+<li>
+<p>手动添加子库 package.json 依赖</p>
+</li>
+<li>
+<p>至此便可顺利调试复杂脚手架了</p>
+</li>
+<li>
+<p>如果此时子库文件已经开发好，将子库文件进行发布</p>
+</li>
+<li>
+<p><strong>当子库文件进行上线之后进入到主库文件夹</strong></p>
+<ol>
+<li>
+<p>执行 <code>npm unlink 子库文件包</code> 将文件解开绑定</p>
+</li>
+<li>
+<p>安装线上库文件包 npm install</p>
+<p>注解：如果此时安装还报错的话：</p>
+<ol>
+<li>将子库文件重新绑定 link 再解绑 unlink</li>
+<li>执行 which 主库文件包 例如 which imooc-test 查看包文件地址并 复制地址</li>
+<li>执行 ll 刚才复制的地址（注意这里的地址回退到 node 版本处拼接查看 lib/node_modules</li>
+<li>如果看到上线后的库文件依然存在的话执行 npm remove -g 子库文件包</li>
+<li>执行 npm i 子库文件包</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="脚手架本地-link-标准流程">脚手架本地 link 标准流程<a href="#脚手架本地-link-标准流程" class="hash-link" aria-label="脚手架本地 link 标准流程的直接链接" title="脚手架本地 link 标准流程的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="链接本地脚手架">链接本地脚手架<a href="#链接本地脚手架" class="hash-link" aria-label="链接本地脚手架的直接链接" title="链接本地脚手架的直接链接">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd your-cli-dir</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 将当前项目链接到 node 全局 node_modules 中作为一个库文件，并解析 bin 配置创建可执行文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm link</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="链接本地库文件">链接本地库文件<a href="#链接本地库文件" class="hash-link" aria-label="链接本  地库文件的直接链接" title="链接本地库文件的直接链接">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd your-lib-dir</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 将当前项目链接到 node 全局 node_modules 中作为一个库文件，并解析 bin 配置创建可执行文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm link</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd your-cli-dir</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 将当前项目中 node_modules 下指定的库文件链接到 node 全局 node_modules 下的库文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm link your-lib</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="取消链接本地库文件">取消链接本地库文件<a href="#取消链接本地库文件" class="hash-link" aria-label="取消链接本地库 文件的直接链接" title="取消链接本地库文件的直接链接">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd your-lib-dir</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 将当前项目从 node 全局 node_modules 中移除</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm unlink</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd your-cli-dir</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># link 存在：将当前项目中的库文件依赖移除</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm unlink your-lib</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># link 不存在</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">rm -rf node_modules</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="命令注册参数解析">命令注册&amp;参数解析<a href="#命令注册参数解析" class="hash-link" aria-label="命令注册&amp;参数解析的直接链接" title="命令注册&amp;参数解析的直接链接">​</a></h2>
+<blockquote>
+<p>通过 process 库进行实现</p>
+</blockquote>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> argv </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">require</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;process&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">argv</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> command </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> argv</span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>附：完整代码详见<a href="https://github.com/CrystalAngelLee/crystal-fd-repositories/blob/master/scaffold/scaffold-demo/bin/index.js" target="_blank" rel="noopener noreferrer">Github</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="发布上线">发布上线<a href="#发布上线" class="hash-link" aria-label="发布上线的直接链接" title="发布上线的直接链接">​</a></h2>
+<ol>
+<li>先发布工具包（如果没有请忽略）<!-- -->
+<ol>
+<li>执行 <code>npm unlink</code> 解除全局绑定</li>
+<li>升级版本号</li>
+<li>执行 <code>npm publish</code> 发布工具包</li>
+</ol>
+</li>
+<li>发布脚手架<!-- -->
+<ol>
+<li>发布 scaffold-demo-utils 包</li>
+<li>执行 <code>npm unlink</code> 解除全局绑定，如果遇到报错：删掉 node_modules 重新执行命令</li>
+<li>执行 <code>npm unlink scaffold-demo-utils</code></li>
+<li>升级版本号</li>
+<li>执行 <code>npm publish</code> 发布</li>
+</ol>
+</li>
+</ol>
+<h1>原生脚手架开发痛点分析</h1>
+<p><strong>痛点一：</strong> 重复操作</p>
+<ul>
+<li>多 package 本地 link</li>
+<li>多 package 依赖安装</li>
+<li>多 package 单元测试</li>
+<li>多 package 代码提交</li>
+<li>多 package 代码发布</li>
+</ul>
+<p><strong>痛点二：</strong> 版本一致性</p>
+<ul>
+<li>发布时版本一致性</li>
+<li>发布后相互依赖版本升级</li>
+</ul>
+<p><strong>package 越多，管理  复杂度越高</strong>，所以如果你的脚手架开发有 多 package 的情况，建议使用<a href="https://lerna.js.org/" target="_blank" rel="noopener noreferrer">Lerna</a>进行开发</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/module"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">前端模块化概述</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/scaffold/import_local"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">import_local</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#研发的视角开发脚手架的必要性" class="table-of-contents__link toc-highlight">研发的视角：开发脚手架的必要性</a><ul><li><a href="#脚手架核心价值" class="table-of-contents__link toc-highlight">脚手架核心价值</a></li><li><a href="#和自动化构建工具区别" class="table-of-contents__link toc-highlight">和自动化构建工具区别</a></li></ul></li><li><a href="#从使用角度理解什么是脚手架" class="table-of-contents__link toc-highlight">从使用角度理解什么是脚手架</a><ul><li><a href="#脚手架简介" class="table-of-contents__link toc-highlight">脚手架简介</a></li></ul></li><li><a href="#脚手架执行原理" class="table-of-contents__link toc-highlight">脚手架执行原理</a></li><li><a href="#从应用的角度看如何开发一个脚手架" class="table-of-contents__link toc-highlight">从应用的角度看如何开发一个脚手架</a></li><li><a href="#脚手架开发流程详解" class="table-of-contents__link toc-highlight">脚手架开发流程详解</a><ul><li><a href="#开发流程" class="table-of-contents__link toc-highlight">开发流程</a></li><li><a href="#使用流程" class="table-of-contents__link toc-highlight">使用流程</a></li><li><a href="#脚手架开发难点" class="table-of-contents__link toc-highlight">脚手架开发难点</a></li></ul></li><li><a href="#开发调试" class="table-of-contents__link toc-highlight">开发调试</a></li><li><a href="#脚手架本地-link-标准流程" class="table-of-contents__link toc-highlight">脚手架本地 link 标准流程</a><ul><li><a href="#链接本地脚手架" class="table-of-contents__link toc-highlight">链接本地脚手架</a></li><li><a href="#链接本地库文件" class="table-of-contents__link toc-highlight">链接本地库文件</a></li><li><a href="#取消链接本地库文件" class="table-of-contents__link toc-highlight">取消链接本地库文件</a></li></ul></li><li><a href="#命令注册参数解析" class="table-of-contents__link toc-highlight">命令注册&amp;参数解析</a></li><li><a href="#发布上线" class="table-of-contents__link toc-highlight">发布上线</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><a class="footer__link-item" href="/author">关于作者</a></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Crystal's Doc.</div></div></div></footer></div>
+</body>
+</html>
