@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrystal_docs=self.webpackChunkcrystal_docs||[]).push([[258],{7388:(s,t,c)=>{c.r(t),c.d(t,{default:()=>u});c(7294);var e=c(6040),r=c(5893);const u=function(){return(0,r.jsx)(e.Z,{title:"Author"})}}}]);
